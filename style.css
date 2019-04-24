@@ -13,6 +13,7 @@ body {
 .segment {
   border: solid 1px #eee;
   padding: 10px;
+  min-height: 200px;
   overflow: scroll;
 }
 

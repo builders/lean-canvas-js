@@ -68,6 +68,8 @@ body {
   background: #333;
   font-size: 1em;
   color: #fff;
+  border-radius: 0;
+  -webkit-border-radius: 0;
 }
 
 #input-box input[type=text]:focus {

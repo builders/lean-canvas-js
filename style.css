@@ -6,104 +6,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   margin: 0;
-  background: #ddd;
-}
-
-#canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: white;
-  border: 20px solid #222;
-  border-top: 100px solid #222;
-}
-
-#canvas-problem {
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  width: 20%;
-  height: 75%;
-}
-
-#canvas-solution {
-  position: absolute;
-  top: 0;
-  left: 20%;
-  
-  width: 20%;
-  height: calc(75% / 2);
-}
-
-#canvas-key-metrics {
-  position: absolute;
-  top: calc(75% / 2);
-  left: 20%;
-  
-  width: 20%;
-  height: calc(75% / 2);
-}
-
-#canvas-value-proposition {
-  position: absolute;
-  top: 0;
-  left: 40%;
-  
-  width: 20%;
-  height: 75%;
-}
-
-#canvas-unfair-advantage {
-  position: absolute;
-  top: 0;
-  left: 60%;
-  
-  width: 20%;
-  height: calc(75% / 2);
-}
-
-#canvas-channels {
-  position: absolute;
-  top: calc(75% / 2);
-  left: 60%;
-  
-  width: 20%;
-  height: calc(75% / 2);
-}
-
-#canvas-customer-segments {
-  position: absolute;
-  top: 0;
-  left: 80%;
-  
-  width: 20%;
-  height: 75%;
-}
-
-#canvas-revenue-streams {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  
-  width: 50%;
-  height: 25%;
-}
-
-#canvas-cost-structure {
-  position: absolute;
-  top: 75%;
-  left: 0;
-  
-  width: 50%;
-  height: 25%;
+  background: #fff;
+  padding-top: 60px;
 }
 
 .segment {
-  border: solid 1px #ddd;
+  border: solid 1px #eee;
   padding: 10px;
   overflow: scroll;
 }
@@ -143,18 +51,16 @@ body {
 }
 
 #input-box {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
-  border: 20px solid #222;
+  height: 60px;
 }
 
 #input-box input[type=text] {
-  position: absolute;
-  height: 60px;
   width: 100%;
+  height: 60px;
   padding: 20px;
   margin: 0;
   border: none;
@@ -168,3 +74,130 @@ body {
   background: black;
 }
 
+
+/*
+--------------------------------------------------
+Medium Screens (750 pixels wide)
+-------------------------------------------------- */
+@media only screen and (min-width: 960px) {
+
+  #canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: white;
+    border: 20px solid #222;
+    border-top: 100px solid #222;
+  }
+
+  #canvas-problem {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20%;
+    height: 75%;
+  }
+
+  #canvas-solution {
+    position: absolute;
+    top: 0;
+    left: 20%;
+
+    width: 20%;
+    height: calc(75% / 2);
+  }
+
+  #canvas-key-metrics {
+    position: absolute;
+    top: calc(75% / 2);
+    left: 20%;
+
+    width: 20%;
+    height: calc(75% / 2);
+  }
+
+  #canvas-value-proposition {
+    position: absolute;
+    top: 0;
+    left: 40%;
+
+    width: 20%;
+    height: 75%;
+  }
+
+  #canvas-unfair-advantage {
+    position: absolute;
+    top: 0;
+    left: 60%;
+
+    width: 20%;
+    height: calc(75% / 2);
+  }
+
+  #canvas-channels {
+    position: absolute;
+    top: calc(75% / 2);
+    left: 60%;
+
+    width: 20%;
+    height: calc(75% / 2);
+  }
+
+  #canvas-customer-segments {
+    position: absolute;
+    top: 0;
+    left: 80%;
+
+    width: 20%;
+    height: 75%;
+  }
+
+  #canvas-revenue-streams {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+
+    width: 50%;
+    height: 25%;
+  }
+
+  #canvas-cost-structure {
+    position: absolute;
+    top: 75%;
+    left: 0;
+
+    width: 50%;
+    height: 25%;
+  }
+
+  #input-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    border: 20px solid #222;
+  }
+
+  #input-box input[type=text] {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    border: none;
+    background: #333;
+    font-size: 1em;
+    color: #fff;
+  }
+
+  #input-box input[type=text]:focus {
+    outline: none;
+    background: black;
+  }
+
+}
